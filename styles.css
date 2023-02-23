@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*NavLinks*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: azure;
+    font-family: Lato, sans-serif;
+}
+
+.brand-title {
+    font-size: 1.1rem;
+    margin: .5rem;
+}
+
+.navbar-title ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-title li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.navbar li .home {
+    color: green;
+}
+
+.navbar li .home:hover{
+    background-color: rgb(5, 159, 5);
+    color: whitesmoke
+}
+
+.navbar-title li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-title li:hover{
+    background-color: green;
+}
+
+.soc-items{
+    background-color: rgb(5, 186, 5);
+}
+
+.soc-items:hover{
+    background-color: green;
+}
+
+/*NavLinks*/
+
+
+/* Body */
+.Coffee-img img {
+   border: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: 45px;
+}
+
+u {
+    color: green;
+    cursor: pointer;
+}
+
+.notes {
+   font-weight: bold;
+}
+
+
+.ordbutton a button{
+   border: 4px solid rgb(239, 30, 7) white red;
+   width: 145px;
+   height: 65px;
+   background: rgb(244, 59, 59);
+   color: aliceblue;
+   font-weight: bolder;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 15px;
+   text-decoration: whitesmoke;
+   text-decoration: none;
+   border-radius: 2px;
+   cursor: pointer;
+   box-shadow: red; 
+}
+
+.ordbutton a:hover{
+    background-color: rgb(243, 248, 248);
+    color: rgb(239, 26, 7);
+    border: none;
+}
+
+footer{
+    background: black;
+    padding:0;
+    margin-bottom: 0;
+}
+
+footer p{
+    color: whitesmoke;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 0;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+
+input{
+    width: 40%;
+    margin-top: 10px;
+}

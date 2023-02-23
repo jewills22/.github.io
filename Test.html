@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Test</title>
+  </head>
+  <div class="navlinks">
+    <a class="active" href="Home">Home</a>
+    <a href="">Directions</a>
+    <a href="">Menus</a>
+    <a href="">Order Online</a>
+    <a href="">Photo Gallery</a>
+    <a href="">Contact US</a>
+    <a class="search" href="Search">Search</a>
+  </div>
+  <body>
+    <section>
+      <div class="Coffee-img">
+        <img src="./Images/coffeeshop-logo-350.jpeg" alt="" />
+      </div>
+
+      <div class="notes">
+        <p>
+          Coffee Shop at Lawrence Pharmacy
+          <br />
+          631 Broad Street
+          <br />
+          Gainesville, GA 30501
+        </p>
+      </div>
+
+      <div class="ordbutton">
+        <a href="#">ORDER ONLINE!</a>
+      </div>
+
+      <div class="phonen">
+        <p>Phone: 770-534-3231</p>
+        <p>Email: <u>Info@GainesvilleCoffeeShop.com</u></p>
+      </div>
+
+      <div class="image">
+        <img src="./Images/lunch-sandwich-600.jpeg" alt="" />
+      </div>
+
+      <div class="dev">
+        <p>
+          We Deliver Breakfast & Lunch
+          <br />
+          Monday thru Friday: 8 am – 2 pm FREE
+          <br />
+          delivery in Gainesville
+          <br />
+          – No minimum order!
+        </p>
+      </div>
+
+      <div class="mapsmen">
+        <u>Map & Directions :: Menus</u>
+      </div>
+
+      <div class="vis">
+        <p>Also visit our lakeside restaurant in Gainesville</p>
+      </div>
+
+      <div class="mapsmn">
+        <u>Skogie’s on Lake Lanier</u>
+      </div>
+
+      <div class="thank">
+        <p>Thank you for giving us a favorable review at <u>Yelp ></u></p>
+      </div>
+    </section>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
